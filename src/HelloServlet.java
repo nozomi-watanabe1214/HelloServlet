@@ -12,17 +12,16 @@ public class HelloServlet extends HttpServlet {
 
     public HelloServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
-protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		PrintWriter out = response.getWriter();
-		out.println("<HTML>");
-		out.println("<BODY>");
-		out.println("<H3>Hello Servlet!</H3>");
-		out.println("</BODY>");
-		out.println("</HTML>");
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws
+ServletException, IOException {
+	PrintWriter out = response.getWriter();
+	out.println("<HTML>");
+	out.println("<BODY>");
+	out.println("<H3>Hello Servlet!</H3>");
+	out.println("</BODY>");
+	out.println("</HTML>");
 	}
 
 }
