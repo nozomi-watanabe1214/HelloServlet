@@ -39,7 +39,7 @@ public class MySQLServlet extends HttpServlet {
 	     Connection conn = null;
 	     String url = "jdbc:mysql://localhost/testdb";
 	     String user = "root";
-	     String password = "mysql";
+	     String password = "";
 
 	     try {
 	       Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -54,8 +54,7 @@ public class MySQLServlet extends HttpServlet {
 	         String userName = rs.getString("user_name");
 	         String userPassword = rs.getString("password");
 	         out.println("<p>");
-	         out.println("ユーザーID:" + userId + ", ユーザー名:" + userName + ", パスワード:" +
-	userPassword);
+	         out.println("ユーザーID:" + userId + ", ユーザー名:" + userName + ", パスワード:" +userPassword);
 	         out.println("</p>");
 	         }
 
